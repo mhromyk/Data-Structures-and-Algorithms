@@ -3,7 +3,7 @@ package data_structures;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class ArrayTest {
+class ArrayReverseStringTest {
 
     @Test
     void reverseString_whenInputIsCorrect() {
@@ -57,4 +57,12 @@ class ArrayTest {
         Assertions.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    void reverseString_whenInputIsNull() {
+        // Given
+        String input = null;
+
+        // When / Then
+        Assertions.assertNull(Array.reverseString(input));
+    }
 }
